@@ -1,60 +1,7 @@
-from typing import TypedDict
-import httpx
+from httpx import Response
 from clients.api_client import APIClient
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
-
-
-class GetExercisesQueryDict(TypedDict):
-    """
-    Описание структуры запроса на получение списка заданий.
-    """
-    courseId: str
-
-
-class CreateExerciseRequestDict(TypedDict):
-    """
-    Описание структуры запроса на создание задания.
-    """
-    title: str
-    courseId: str
-    maxScore: int
-    minScore: int
-    orderIndex: int
-    description: str
-    estimatedTime: str
-
-
-class UpdateExerciseRequestDict(TypedDict):
-    """
-    Описание структуры запроса на обновление задания.
-    """
-    title: str
-    maxScore: int
-    minScore: int
-    orderIndex: int
-    description: str
-    estimatedTime: str
-
-
-class Exercise(TypedDict):
-    """
-    Описание структуры задания
-    """
-    id: str
-    title: str
-    courseId: str
-    maxScore: int
-    minScore: int
-    orderIndex: int
-    description: str
-    estimatedTime: str
-
-
-class GetExercisesResponseDict(TypedDict):
-    """
-    Описание структуры ответа метода, получающего список заданий
-    """
-    exercises: list[Exercise]
+from clients.exercises.exercises_schema import *
 
 
 class ExercisesClient(APIClient):
@@ -62,16 +9,16 @@ class ExercisesClient(APIClient):
     Клиент для работы с /api/v1/exercises
     """
 
-    def get_exercises_api(self, query: GetExercisesQueryDict) -> httpx.Response:
+    def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
         Метод получает список заданий для определенного курса.
 
         :param query: Словарь с courseId.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get("/api/v1/exercises", params=query)
+        return self.get("/api/v1/exercises", params=query.model_dump(by_alias=True))
 
-    def get_exercise_api(self, exercise_id: str) -> httpx.Response:
+    def get_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод получает информацию о задании по exercise_id.
 
@@ -80,7 +27,7 @@ class ExercisesClient(APIClient):
         """
         return self.get(f"/api/v1/exercises/{exercise_id}")
 
-    def create_exercise_api(self, request_body: CreateExerciseRequestDict) -> httpx.Response:
+    def create_exercise_api(self, request: CreateExerciseRequestSchema) -> Response:
         """
         Метод создаёт задание.
 
@@ -88,9 +35,9 @@ class ExercisesClient(APIClient):
          minScore, orderIndex, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post("/api/v1/exercises", json=request_body)
+        return self.post("/api/v1/exercises", json=request.model_dump(by_alias=True))
 
-    def update_exercise_api(self, exercise_id: str, request_body: UpdateExerciseRequestDict) -> httpx.Response:
+    def update_exercise_api(self, exercise_id: str, request_body: UpdateExerciseRequestSchema) -> Response:
         """
         Метод обновляет данные задания.
 
@@ -99,9 +46,9 @@ class ExercisesClient(APIClient):
          minScore, orderIndex, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(f"/api/v1/exercises/{exercise_id}", json=request_body)
+        return self.patch(f"/api/v1/exercises/{exercise_id}", json=request_body.model_dump(by_alias=True))
 
-    def delete_exercise_api(self, exercise_id: str) -> httpx.Response:
+    def delete_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод удаляет задание.
 
@@ -110,7 +57,7 @@ class ExercisesClient(APIClient):
         """
         return self.delete(f"/api/v1/exercises/{exercise_id}")
 
-    def get_exercise(self, exercise_id: str) -> Exercise:
+    def get_exercise(self, exercise_id: str) -> ExerciseSchema:
         """
         Метод возвращает объект в виде структуры Exercise
 
@@ -118,9 +65,9 @@ class ExercisesClient(APIClient):
         :return: Ответ от сервера в виде объекта Exercise
         """
         response = self.get_exercise_api(exercise_id)
-        return response.json()
+        return ExerciseSchema.model_validate_json(response.text)
 
-    def get_exercises(self, query: GetExercisesQueryDict) -> GetExercisesResponseDict:
+    def get_exercises(self, query: GetExercisesQuerySchema) -> GetExercisesResponseSchema:
         """
         Метод возвращает обьъект в виде структуры GetExercisesResponseDict
 
@@ -128,9 +75,9 @@ class ExercisesClient(APIClient):
         :return: Ответ от сервера в виде структуры GetExercisesResponseDict
         """
         response = self.get_exercises_api(query)
-        return response.json()
+        return GetExercisesResponseSchema.model_validate_json(response.text)
 
-    def create_exercise(self, request_body: CreateExerciseRequestDict) -> Exercise:
+    def create_exercise(self, request: CreateExerciseRequestSchema) -> CreateExerciseResponseSchema:
         """
         Метод возвращает объект в виде структуры Exercise
 
@@ -138,10 +85,10 @@ class ExercisesClient(APIClient):
          minScore, orderIndex, description, estimatedTime.
         :return: Ответ от сервера в виде структуры Exercise
         """
-        response = self.create_exercise_api(request_body)
-        return response.json()
+        response = self.create_exercise_api(request)
+        return CreateExerciseResponseSchema.model_validate_json(response.text)
 
-    def update_exercise(self, exercise_id: str, request_body: UpdateExerciseRequestDict) -> Exercise:
+    def update_exercise(self, exercise_id: str, request_body: UpdateExerciseRequestSchema) -> ExerciseSchema:
         """
         Метод возвращает объект в виде структуры Exercise
 
@@ -151,7 +98,7 @@ class ExercisesClient(APIClient):
         :return: Ответ от сервера в виде структуры Exercise
         """
         response = self.update_exercise_api(exercise_id, request_body)
-        return response.json()
+        return ExerciseSchema.model_validate_json(response.text)
 
 
 def get_exercises_client(user: AuthenticationUserSchema) -> ExercisesClient:
