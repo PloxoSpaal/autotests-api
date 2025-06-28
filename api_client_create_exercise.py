@@ -7,18 +7,11 @@ from clients.files.files_schema import CreateFileRequestSchema
 from clients.private_http_builder import AuthenticationUserSchema
 from clients.users.public_users_client import get_public_users_client
 from clients.users.users_schema import CreateUserRequestSchema
-from tools.fakers import fake
 
 public_users_client = get_public_users_client()
 
 # Создаем пользователя
-create_user_request = CreateUserRequestSchema(
-    email=fake.email(),
-    password="string",
-    last_name="string",
-    first_name="string",
-    middle_name="string"
-)
+create_user_request = CreateUserRequestSchema()
 create_user_response = public_users_client.create_user(create_user_request)
 
 # Инициализируем клиенты
@@ -31,21 +24,12 @@ courses_client = get_courses_client(authentication_user)
 exercises_client = get_exercises_client(authentication_user)
 
 # Загружаем файл
-create_file_request = CreateFileRequestSchema(
-    filename="image.png",
-    directory="courses",
-    upload_file="./testdata/files/image.png"
-)
+create_file_request = CreateFileRequestSchema(upload_file="./testdata/files/image.png")
 create_file_response = files_client.create_file(create_file_request)
 print('Create file data:', create_file_response)
 
 # Создаем курс
 create_course_request = CreateCourseRequestSchema(
-    title="Python",
-    max_score=100,
-    min_score=10,
-    description="Python API course",
-    estimated_time="2 weeks",
     preview_file_id=create_file_response.file.id,
     created_by_user_id=create_user_response.user.id
 )
@@ -54,13 +38,7 @@ print('Create course data:', create_course_response)
 
 # Создаем задание
 create_exercise_request = CreateExerciseRequestSchema(
-    title="Exercise 1",
-    course_id=create_course_response.course.id,
-    max_score=100,
-    min_score=33,
-    order_index=123,
-    description="Basic exercise",
-    estimated_time="2h30m"
+    course_id=create_course_response.course.id
 )
 create_exercise_response = exercises_client.create_exercise(create_exercise_request)
 print('Create exercise data:', create_exercise_response)
