@@ -6,6 +6,7 @@ from tools.assertions.base import assert_status_code
 from tools.assertions.users import assert_created_user_values, assert_get_user_response
 import pytest
 from tools.fakers import fake
+from fixtures.users import UserFixture
 
 
 

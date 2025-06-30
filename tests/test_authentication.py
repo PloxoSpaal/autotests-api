@@ -1,10 +1,9 @@
 from http import HTTPStatus
-
-from tests.conftest import UserFixture
 from tools.assertions.schema import validate_json_schema
 from clients.users.public_users_client import get_public_users_client, PublicUsersClient
 from clients.authentication.authentication_client import get_authentication_client, AuthenticationClient
 from clients.users.users_schema import CreateUserRequestSchema
+from fixtures.users import UserFixture
 from clients.authentication.authentication_schema import LoginResponseSchema, LoginRequestSchema
 from tools.assertions.base import assert_status_code
 from tools.assertions.authentication import assert_login_response
