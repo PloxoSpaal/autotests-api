@@ -44,3 +44,4 @@ def assert_get_user_response(
     :param create_user_response: Ответ при создании пользователя
     :return: AssertionError при несоответствии значений
     """
+    assert_user(get_user_response.user, create_user_response.user)
