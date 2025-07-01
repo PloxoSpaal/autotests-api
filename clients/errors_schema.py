@@ -2,6 +2,16 @@ from typing import Any
 from pydantic import BaseModel, Field, ConfigDict
 
 
+class InternalErrorResponseSchema(BaseModel):
+    """
+    Модель для описания внутренней ошибки.
+    """
+
+    model_config = ConfigDict(populate_by_name=True)
+
+    details: str = Field(alias="detail")
+
+
 class ValidationErrorSchema(BaseModel):
     """
     Модель, описывающая структуру ошибки валидации API.
