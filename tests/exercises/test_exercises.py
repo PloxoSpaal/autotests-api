@@ -1,5 +1,4 @@
 from http import HTTPStatus
-import httpx
 import pytest
 from clients.exercises.exercises_schema import CreateExerciseRequestSchema, CreateExerciseResponseSchema, GetExerciseResponseSchema
 from fixtures.courses import CourseFixture
