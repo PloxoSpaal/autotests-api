@@ -68,3 +68,10 @@ class GetExercisesResponseSchema(BaseModel):
     Описание структуры ответа метода, получающего список заданий
     """
     exercises: list[ExerciseSchema]
+
+
+class GetExerciseResponseSchema(BaseModel):
+    """
+    Описание структуры ответа на запрос задания.
+    """
+    exercise: ExerciseSchema
