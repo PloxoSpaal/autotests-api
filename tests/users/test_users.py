@@ -5,6 +5,7 @@ from clients.users.users_schema import CreateUserRequestSchema, CreateUserRespon
 from tools.assertions.base import assert_status_code
 from tools.assertions.users import assert_created_user_values, assert_get_user_response
 import pytest
+import allure
 from tools.fakers import fake
 from fixtures.users import UserFixture
 
@@ -14,6 +15,7 @@ from fixtures.users import UserFixture
 @pytest.mark.regression
 class TestUsers:
 
+    @allure.title("Создание пользователя")
     @pytest.mark.parametrize(
         "email", [fake.email(domain) for domain in ['mail.ru', 'gmail.com', 'example.com']])
     def test_create_user(self, email: str, public_users_client: PublicUsersClient):
@@ -25,6 +27,7 @@ class TestUsers:
         validate_json_schema(response.json(), response_body.model_json_schema())
 
 
+    @allure.title("Получение информации о пользователе")
     def test_get_user_me(self, private_users_client, function_user):
         response = private_users_client.get_user_me_api()
         response_body = GetUserResponseSchema.model_validate_json(response.text)

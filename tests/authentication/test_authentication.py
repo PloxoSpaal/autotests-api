@@ -8,12 +8,14 @@ from clients.authentication.authentication_schema import LoginResponseSchema, Lo
 from tools.assertions.base import assert_status_code
 from tools.assertions.authentication import assert_login_response
 import pytest
+import allure
 
 
 @pytest.mark.regression
 @pytest.mark.authentication
 class TestAuthentication:
 
+    @allure.title("Авторизация пользователя")
     def test_login(self,
             authentication_client: AuthenticationClient,
             function_user: UserFixture):
