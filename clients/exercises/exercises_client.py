@@ -10,7 +10,7 @@ class ExercisesClient(APIClient):
     Клиент для работы с /api/v1/exercises
     """
 
-    @allure.step("Get exercises")
+    @allure.step("Get list of exercises")
     def get_exercises_api(self, query: GetExercisesQuerySchema) -> Response:
         """
         Метод получает список заданий для определенного курса.
@@ -20,7 +20,7 @@ class ExercisesClient(APIClient):
         """
         return self.get("/api/v1/exercises", params=query.model_dump(by_alias=True))
 
-    @allure.step("Get exercise")
+    @allure.step("Get exercise by id: {exercise_id:}")
     def get_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод получает информацию о задании по exercise_id.
@@ -41,7 +41,7 @@ class ExercisesClient(APIClient):
         """
         return self.post("/api/v1/exercises", json=request.model_dump(by_alias=True))
 
-    @allure.step("Update exercise")
+    @allure.step("Update exercise by id: {exercise_id:}")
     def update_exercise_api(self, exercise_id: str, request_body: UpdateExerciseRequestSchema) -> Response:
         """
         Метод обновляет данные задания.
@@ -53,7 +53,7 @@ class ExercisesClient(APIClient):
         """
         return self.patch(f"/api/v1/exercises/{exercise_id}", json=request_body.model_dump(by_alias=True))
 
-    @allure.step("Delete exercise")
+    @allure.step("Delete exercise by id: {exercise_id:}")
     def delete_exercise_api(self, exercise_id: str) -> Response:
         """
         Метод удаляет задание.
@@ -63,7 +63,7 @@ class ExercisesClient(APIClient):
         """
         return self.delete(f"/api/v1/exercises/{exercise_id}")
 
-    @allure.step("Get exercise body")
+    @allure.step("Get JSON of exercise by id: {exercise_id:}")
     def get_exercise(self, exercise_id: str) -> ExerciseSchema:
         """
         Метод возвращает объект в виде структуры Exercise
@@ -74,7 +74,7 @@ class ExercisesClient(APIClient):
         response = self.get_exercise_api(exercise_id)
         return ExerciseSchema.model_validate_json(response.text)
 
-    @allure.step("Get exercises body")
+    @allure.step("Get JSON of exercises list")
     def get_exercises(self, query: GetExercisesQuerySchema) -> GetExercisesResponseSchema:
         """
         Метод возвращает обьъект в виде структуры GetExercisesResponseDict
@@ -85,7 +85,7 @@ class ExercisesClient(APIClient):
         response = self.get_exercises_api(query)
         return GetExercisesResponseSchema.model_validate_json(response.text)
 
-    @allure.step("Create exercise body")
+    @allure.step("Create exercise, JSON response")
     def create_exercise(self, request: CreateExerciseRequestSchema) -> CreateExerciseResponseSchema:
         """
         Метод возвращает объект в виде структуры Exercise
@@ -97,7 +97,7 @@ class ExercisesClient(APIClient):
         response = self.create_exercise_api(request)
         return CreateExerciseResponseSchema.model_validate_json(response.text)
 
-    @allure.step("Update exercise body")
+    @allure.step("Update exercise, JSON response")
     def update_exercise(self, exercise_id: str, request_body: UpdateExerciseRequestSchema) -> ExerciseSchema:
         """
         Метод возвращает объект в виде структуры Exercise
