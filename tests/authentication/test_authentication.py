@@ -9,13 +9,18 @@ from tools.assertions.base import assert_status_code
 from tools.assertions.authentication import assert_login_response
 from tools.allure.tags import AllureTag
 from tools.allure.epics import AllureEpic
+from tools.allure.parent_suite import AllureParentSuite
 from tools.allure.features import AllureFeature
+from tools.allure.suite import AllureSuite
 from tools.allure.stories import AllureStory
+from tools.allure.sub_suite import AllureSubSuite
 from allure_commons.types import Severity
 import pytest
 import allure
 
 
+@allure.parent_suite(AllureParentSuite.LMS)
+@allure.suite(AllureSuite.AUTHENTICATION)
 @allure.epic(AllureEpic.LMS)
 @allure.feature(AllureFeature.AUTHENTICATION)
 @allure.tag(AllureTag.AUTHENTICATION, AllureTag.REGRESSION)
@@ -24,6 +29,7 @@ import allure
 class TestAuthentication:
 
     @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureSubSuite.LOGIN)
     @allure.story(AllureStory.LOGIN)
     @allure.title("Авторизация пользователя")
     def test_login(self,

@@ -14,11 +14,16 @@ from tools.assertions.schema import validate_json_schema
 from clients.exercises.exercises_client import ExercisesClient
 from tools.allure.tags import AllureTag
 from tools.allure.epics import AllureEpic
+from tools.allure.parent_suite import AllureParentSuite
 from tools.allure.features import AllureFeature
+from tools.allure.suite import AllureSuite
 from tools.allure.stories import AllureStory
+from tools.allure.sub_suite import AllureSubSuite
 from allure_commons.types import Severity
 
 
+@allure.parent_suite(AllureParentSuite.LMS)
+@allure.suite(AllureSuite.EXERCISES)
 @allure.epic(AllureEpic.LMS)
 @allure.feature(AllureFeature.EXERCISES)
 @allure.tag(AllureTag.EXERCISES, AllureTag.REGRESSION)
@@ -27,6 +32,7 @@ from allure_commons.types import Severity
 class TestExercises:
 
     @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureSubSuite.CREATE_ENTITY)
     @allure.story(AllureStory.CREATE_ENTITY)
     @allure.title("Создание задания")
     def test_create_exercise(
@@ -42,6 +48,7 @@ class TestExercises:
 
 
     @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureSubSuite.GET_ENTITY)
     @allure.story(AllureStory.GET_ENTITY)
     @allure.title("Получение данных задания")
     def test_get_exercise(
@@ -57,6 +64,7 @@ class TestExercises:
 
 
     @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureSubSuite.UPDATE_ENTITY)
     @allure.story(AllureStory.UPDATE_ENTITY)
     @allure.title("Обновление данных задания")
     def test_update_exercise(
@@ -71,6 +79,7 @@ class TestExercises:
 
 
     @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureSubSuite.DELETE_ENTITY)
     @allure.story(AllureStory.DELETE_ENTITY)
     @allure.title("Удаление задания")
     def test_delete_exercise(
@@ -87,6 +96,7 @@ class TestExercises:
 
 
     @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureSubSuite.GET_ENTITIES)
     @allure.story(AllureStory.GET_ENTITIES)
     @allure.title("Получение списка заданий")
     def test_get_exercises(

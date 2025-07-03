@@ -12,11 +12,16 @@ from tools.assertions.courses import assert_update_course_response, assert_get_c
 from tools.assertions.schema import validate_json_schema
 from tools.allure.tags import AllureTag
 from tools.allure.epics import AllureEpic
+from tools.allure.parent_suite import AllureParentSuite
 from tools.allure.features import AllureFeature
+from tools.allure.suite import AllureSuite
 from tools.allure.stories import AllureStory
+from tools.allure.sub_suite import AllureSubSuite
 from allure_commons.types import Severity
 
 
+@allure.parent_suite(AllureParentSuite.LMS)
+@allure.suite(AllureSuite.COURSES)
 @allure.epic(AllureEpic.LMS)
 @allure.feature(AllureFeature.COURSES)
 @allure.tag(AllureTag.COURSES, AllureTag.REGRESSION)
@@ -25,6 +30,7 @@ from allure_commons.types import Severity
 class TestCourses:
 
     @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureSubSuite.GET_ENTITIES)
     @allure.story(AllureStory.GET_ENTITIES)
     @allure.title("Обновление данных курса")
     def test_update_course(self, courses_client: CoursesClient, function_course: CourseFixture):
@@ -37,6 +43,7 @@ class TestCourses:
 
 
     @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureSubSuite.UPDATE_ENTITY)
     @allure.story(AllureStory.UPDATE_ENTITY)
     @allure.title("Получение списка курсов")
     def test_get_courses(
@@ -51,6 +58,7 @@ class TestCourses:
 
 
     @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureSubSuite.CREATE_ENTITY)
     @allure.story(AllureStory.CREATE_ENTITY)
     @allure.title("Создание курса")
     def test_create_course(

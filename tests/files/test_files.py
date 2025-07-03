@@ -11,11 +11,16 @@ from tools.assertions.files import assert_create_file_response, assert_create_fi
 from tools.assertions.schema import validate_json_schema
 from tools.allure.tags import AllureTag
 from tools.allure.epics import AllureEpic
+from tools.allure.parent_suite import AllureParentSuite
 from tools.allure.features import AllureFeature
+from tools.allure.suite import AllureSuite
 from tools.allure.stories import AllureStory
+from tools.allure.sub_suite import AllureSubSuite
 from allure_commons.types import Severity
 
 
+@allure.parent_suite(AllureParentSuite.LMS)
+@allure.suite(AllureSuite.FILES)
 @allure.epic(AllureEpic.LMS)
 @allure.feature(AllureFeature.FILES)
 @allure.tag(AllureTag.FILES, AllureTag.REGRESSION)
@@ -24,6 +29,7 @@ from allure_commons.types import Severity
 class TestFiles:
 
     @allure.severity(Severity.BLOCKER)
+    @allure.sub_suite(AllureSubSuite.CREATE_ENTITY)
     @allure.story(AllureStory.CREATE_ENTITY)
     @allure.title("Создание файла")
     def test_create_file(self, files_client: FilesClient):
@@ -36,6 +42,7 @@ class TestFiles:
 
 
     @allure.severity(Severity.CRITICAL)
+    @allure.sub_suite(AllureSubSuite.GET_ENTITY)
     @allure.story(AllureStory.GET_ENTITY)
     @allure.title("Получение файла")
     def test_get_file(self, files_client: FilesClient, function_file: FileFixture):
@@ -47,6 +54,7 @@ class TestFiles:
 
 
     @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureSubSuite.DELETE_ENTITY)
     @allure.story(AllureStory.DELETE_ENTITY)
     @allure.title("Создание файла с пустым названием")
     def test_create_file_with_empty_filename(self, files_client: FilesClient):
@@ -62,6 +70,7 @@ class TestFiles:
 
 
     @allure.severity(Severity.MINOR)
+    @allure.sub_suite(AllureSubSuite.VALIDATE_ENTITY)
     @allure.story(AllureStory.VALIDATE_ENTITY)
     @allure.title("Создание файла с пустой директорией")
     def test_create_file_with_empty_directory(self, files_client: FilesClient):
@@ -77,6 +86,7 @@ class TestFiles:
 
 
     @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureSubSuite.VALIDATE_ENTITY)
     @allure.story(AllureStory.VALIDATE_ENTITY)
     @allure.title("Удаление файла")
     def test_delete_file(self, files_client: FilesClient, function_file: FileFixture):
@@ -90,6 +100,7 @@ class TestFiles:
 
 
     @allure.severity(Severity.MINOR)
+    @allure.sub_suite(AllureSubSuite.VALIDATE_ENTITY)
     @allure.story(AllureStory.VALIDATE_ENTITY)
     @allure.title("Получение файла по некорректному file_id")
     def test_get_file_with_incorrect_file_id(self, files_client: FilesClient):

@@ -10,12 +10,17 @@ from tools.fakers import fake
 from fixtures.users import UserFixture
 from tools.allure.tags import AllureTag
 from tools.allure.epics import AllureEpic
+from tools.allure.parent_suite import AllureParentSuite
 from tools.allure.features import AllureFeature
+from tools.allure.suite import AllureSuite
 from tools.allure.stories import AllureStory
+from tools.allure.sub_suite import AllureSubSuite
 from allure_commons.types import Severity
 
 
 @allure.tag(AllureTag.USERS, AllureTag.REGRESSION)
+@allure.parent_suite(AllureParentSuite.LMS)
+@allure.suite(AllureSuite.USERS)
 @allure.epic(AllureEpic.LMS)
 @allure.feature(AllureFeature.USERS)
 @pytest.mark.users
@@ -24,6 +29,7 @@ class TestUsers:
 
     @allure.severity(Severity.BLOCKER)
     @allure.title("Создание пользователя")
+    @allure.sub_suite(AllureSubSuite.CREATE_ENTITY)
     @allure.story(AllureStory.CREATE_ENTITY)
     @pytest.mark.parametrize(
         "email", [fake.email(domain) for domain in ['mail.ru', 'gmail.com', 'example.com']])
@@ -37,6 +43,7 @@ class TestUsers:
 
 
     @allure.severity(Severity.NORMAL)
+    @allure.sub_suite(AllureSubSuite.GET_ENTITY)
     @allure.story(AllureStory.GET_ENTITY)
     @allure.title("Получение информации о пользователе")
     def test_get_user_me(self, private_users_client, function_user):
