@@ -11,13 +11,19 @@ from tools.assertions.base import assert_status_code
 from tools.assertions.courses import assert_update_course_response, assert_get_courses_response, assert_create_course_response
 from tools.assertions.schema import validate_json_schema
 from tools.allure.tags import AllureTag
+from tools.allure.epics import AllureEpic
+from tools.allure.features import AllureFeature
+from tools.allure.stories import AllureStory
 
 
+@allure.epic(AllureEpic.LMS)
+@allure.feature(AllureFeature.COURSES)
 @allure.tag(AllureTag.COURSES, AllureTag.REGRESSION)
 @pytest.mark.courses
 @pytest.mark.regression
 class TestCourses:
 
+    @allure.story(AllureStory.GET_ENTITIES)
     @allure.title("Обновление данных курса")
     def test_update_course(self, courses_client: CoursesClient, function_course: CourseFixture):
         request = UpdateCourseRequestSchema()
@@ -28,6 +34,7 @@ class TestCourses:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
 
+    @allure.story(AllureStory.UPDATE_ENTITY)
     @allure.title("Получение списка курсов")
     def test_get_courses(
             self, courses_client: CoursesClient,
@@ -40,6 +47,7 @@ class TestCourses:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
 
+    @allure.story(AllureStory.CREATE_ENTITY)
     @allure.title("Создание курса")
     def test_create_course(
             self, courses_client: CoursesClient,

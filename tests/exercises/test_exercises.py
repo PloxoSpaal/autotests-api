@@ -13,13 +13,19 @@ from tools.assertions.exercises import assert_create_exercise_response, assert_g
 from tools.assertions.schema import validate_json_schema
 from clients.exercises.exercises_client import ExercisesClient
 from tools.allure.tags import AllureTag
+from tools.allure.epics import AllureEpic
+from tools.allure.features import AllureFeature
+from tools.allure.stories import AllureStory
 
 
+@allure.epic(AllureEpic.LMS)
+@allure.feature(AllureFeature.EXERCISES)
 @allure.tag(AllureTag.EXERCISES, AllureTag.REGRESSION)
 @pytest.mark.exercises
 @pytest.mark.regression
 class TestExercises:
 
+    @allure.story(AllureStory.CREATE_ENTITY)
     @allure.title("Создание задания")
     def test_create_exercise(
             self, exercises_client: ExercisesClient,
@@ -33,6 +39,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
 
+    @allure.story(AllureStory.GET_ENTITY)
     @allure.title("Получение данных задания")
     def test_get_exercise(
             self, exercises_client: ExercisesClient,
@@ -46,6 +53,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
 
+    @allure.story(AllureStory.UPDATE_ENTITY)
     @allure.title("Обновление данных задания")
     def test_update_exercise(
             self, exercises_client: ExercisesClient,
@@ -58,6 +66,7 @@ class TestExercises:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
 
+    @allure.story(AllureStory.DELETE_ENTITY)
     @allure.title("Удаление задания")
     def test_delete_exercise(
             self, exercises_client: ExercisesClient,
@@ -72,6 +81,7 @@ class TestExercises:
         validate_json_schema(get_response.json(), get_response_data.model_json_schema())
 
 
+    @allure.story(AllureStory.GET_ENTITIES)
     @allure.title("Получение списка заданий")
     def test_get_exercises(
             self, exercises_client: ExercisesClient,
