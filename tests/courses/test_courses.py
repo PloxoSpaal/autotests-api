@@ -14,6 +14,7 @@ from tools.allure.tags import AllureTag
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
+from allure_commons.types import Severity
 
 
 @allure.epic(AllureEpic.LMS)
@@ -23,6 +24,7 @@ from tools.allure.stories import AllureStory
 @pytest.mark.regression
 class TestCourses:
 
+    @allure.severity(Severity.NORMAL)
     @allure.story(AllureStory.GET_ENTITIES)
     @allure.title("Обновление данных курса")
     def test_update_course(self, courses_client: CoursesClient, function_course: CourseFixture):
@@ -34,6 +36,7 @@ class TestCourses:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
 
+    @allure.severity(Severity.NORMAL)
     @allure.story(AllureStory.UPDATE_ENTITY)
     @allure.title("Получение списка курсов")
     def test_get_courses(
@@ -47,6 +50,7 @@ class TestCourses:
         validate_json_schema(response.json(), response_data.model_json_schema())
 
 
+    @allure.severity(Severity.BLOCKER)
     @allure.story(AllureStory.CREATE_ENTITY)
     @allure.title("Создание курса")
     def test_create_course(

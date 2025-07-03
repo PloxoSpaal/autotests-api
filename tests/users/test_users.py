@@ -12,6 +12,7 @@ from tools.allure.tags import AllureTag
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
+from allure_commons.types import Severity
 
 
 @allure.tag(AllureTag.USERS, AllureTag.REGRESSION)
@@ -21,6 +22,7 @@ from tools.allure.stories import AllureStory
 @pytest.mark.regression
 class TestUsers:
 
+    @allure.severity(Severity.BLOCKER)
     @allure.title("Создание пользователя")
     @allure.story(AllureStory.CREATE_ENTITY)
     @pytest.mark.parametrize(
@@ -34,6 +36,7 @@ class TestUsers:
         validate_json_schema(response.json(), response_body.model_json_schema())
 
 
+    @allure.severity(Severity.NORMAL)
     @allure.story(AllureStory.GET_ENTITY)
     @allure.title("Получение информации о пользователе")
     def test_get_user_me(self, private_users_client, function_user):
