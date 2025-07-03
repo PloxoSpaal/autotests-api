@@ -12,8 +12,10 @@ from tools.assertions.exercises import assert_create_exercise_response, assert_g
     assert_update_exercise_response, assert_exercise_not_found_response, assert_get_exercises_response
 from tools.assertions.schema import validate_json_schema
 from clients.exercises.exercises_client import ExercisesClient
+from tools.allure.tags import AllureTag
 
 
+@allure.tag(AllureTag.EXERCISES, AllureTag.REGRESSION)
 @pytest.mark.exercises
 @pytest.mark.regression
 class TestExercises:

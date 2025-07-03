@@ -8,9 +8,10 @@ import pytest
 import allure
 from tools.fakers import fake
 from fixtures.users import UserFixture
+from tools.allure.tags import AllureTag
 
 
-
+@allure.tag(AllureTag.USERS, AllureTag.REGRESSION)
 @pytest.mark.users
 @pytest.mark.regression
 class TestUsers:

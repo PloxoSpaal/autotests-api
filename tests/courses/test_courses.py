@@ -10,8 +10,10 @@ from fixtures.files import FileFixture
 from tools.assertions.base import assert_status_code
 from tools.assertions.courses import assert_update_course_response, assert_get_courses_response, assert_create_course_response
 from tools.assertions.schema import validate_json_schema
+from tools.allure.tags import AllureTag
 
 
+@allure.tag(AllureTag.COURSES, AllureTag.REGRESSION)
 @pytest.mark.courses
 @pytest.mark.regression
 class TestCourses:

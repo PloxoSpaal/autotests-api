@@ -7,10 +7,12 @@ from fixtures.users import UserFixture
 from clients.authentication.authentication_schema import LoginResponseSchema, LoginRequestSchema
 from tools.assertions.base import assert_status_code
 from tools.assertions.authentication import assert_login_response
+from tools.allure.tags import AllureTag
 import pytest
 import allure
 
 
+@allure.tag(AllureTag.AUTHENTICATION, AllureTag.REGRESSION)
 @pytest.mark.regression
 @pytest.mark.authentication
 class TestAuthentication:
