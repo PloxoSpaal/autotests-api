@@ -1,4 +1,4 @@
-from typing import TypedDict
+import allure
 import httpx
 from clients.api_client import APIClient
 from clients.public_http_builder import get_public_http_client
@@ -10,6 +10,7 @@ class PublicUsersClient(APIClient):
     Клиент для работы с /api/v1/users
     """
 
+    @allure.step("Create user")
     def create_user_api(self, request: CreateUserRequestSchema) -> httpx.Response:
         """
         Метод выполняет создание пользователя.
@@ -19,6 +20,7 @@ class PublicUsersClient(APIClient):
         """
         return self.post("/api/v1/users", json=request.model_dump(by_alias=True))
 
+    @allure.step("Create user body")
     def create_user(self, request: CreateUserRequestSchema) -> CreateUserResponseSchema:
         response = self.create_user_api(request)
         return CreateUserResponseSchema.model_validate_json(response.text)
