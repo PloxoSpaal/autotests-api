@@ -1,4 +1,5 @@
 from http import HTTPStatus
+from config import settings
 import pytest
 import allure
 from clients.errors_schema import ValidationErrorResponseSchema, InternalErrorResponseSchema
@@ -33,7 +34,7 @@ class TestFiles:
     @allure.story(AllureStory.CREATE_ENTITY)
     @allure.title("Создание файла")
     def test_create_file(self, files_client: FilesClient):
-        request = CreateFileRequestSchema(upload_file="./testdata/files/image.png")
+        request = CreateFileRequestSchema(upload_file=settings.test_data.image_png_file)
         response = files_client.create_file_api(request)
         response_data = CreateFileResponseSchema.model_validate_json(response.text)
         assert_status_code(response.status_code, HTTPStatus.OK)
