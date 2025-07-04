@@ -1,5 +1,9 @@
 from typing import Any, Sized
 import allure
+from tools.logger import get_logger
+
+
+logger = get_logger("BASE_ASSERTIONS")
 
 
 def assert_length(actual: Sized, expected: Sized, name: str):
@@ -12,6 +16,7 @@ def assert_length(actual: Sized, expected: Sized, name: str):
     :raises AssertionError: Если длины не совпадают.
     """
     with allure.step(f"Check that length of {name} equals to {len(expected)}"):
+        logger.info(f'Check that length of "{name}" equals to {len(expected)}')
         assert len(actual) == len(expected), (
             f'Incorrect object length: "{name}". '
             f'Expected length: {len(expected)}. '
@@ -28,6 +33,7 @@ def assert_status_code(actual: int, expected: int):
     :param expected: Ожидаемый статус-код
     :return: AssertionError если статус-коды не совпадают
     """
+    logger.info(f"Check that response status code equals to {expected}")
     assert actual == expected, (
         f'Incorrect status code: expect {expected}, got {actual}'
     )
@@ -43,6 +49,7 @@ def assert_equal(actual: Any, expected: Any, name: str):
     :param name: Название ключа
     :return: AssertionError если значения не совпадают
     """
+    logger.info(f'Check that "{name}" equals to {expected}')
     assert actual == expected, (
         f'''Incorrect value in "{name}":
             expect "{expected}", got "{actual}"'''
@@ -58,6 +65,7 @@ def assert_value_is_true(value: Any, key: str):
     :param key: Ключ проверяемого значения
     :return: AssertionError при пустом значении
     """
+    logger.info(f'Check that "{value}" in {key} is true')
     assert value, (
         f'Incorrect value "{value}" in "{key}"'
     )
