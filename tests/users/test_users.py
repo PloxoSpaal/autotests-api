@@ -27,6 +27,7 @@ from allure_commons.types import Severity
 @pytest.mark.regression
 class TestUsers:
 
+
     @allure.severity(Severity.BLOCKER)
     @allure.title("Создание пользователя")
     @allure.sub_suite(AllureSubSuite.CREATE_ENTITY)
