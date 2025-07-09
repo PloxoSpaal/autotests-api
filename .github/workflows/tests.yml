@@ -54,7 +54,7 @@ jobs:
       # 7. Шаг для запуска тестов с использованием pytest и генерации отчётов Allure
       - name: Run API tests with pytest and generate Allure results
         run: |
-          pytest -m regression --alluredir=allure-results --numprocesses 2  # Запускаем тесты, отмеченные как "regression", генерируем результаты для Allure
+          pytest -m regression --alluredir=allure-results  # Запускаем тесты, отмеченные как "regression", генерируем результаты для Allure
 
       # 8. Шаг для получения истории отчётов Allure, если она существует
       - name: Get Allure history
