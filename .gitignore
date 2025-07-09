@@ -1,6 +1,5 @@
 # pycharm
 .idea
-.env
 # python
 .venv
 __pycache__
