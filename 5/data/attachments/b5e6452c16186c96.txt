@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTA5VDE0OjM2OjQ0LjcyMTgyNiIsInVzZXJfaWQiOiI1NzBhMDg0ZC1hNDA2LTQ4YjMtOTk4OC1kYzc2YzEzYTdjY2MifQ.LCMjcovYL0KZLvlCGAr07_MkIbEDnSr9aoMCJ9NMe2s' \
+  -H 'content-length: 403' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Age morning across whole necessary visit believe.","maxScore":100,"minScore":20,"description":"Quality education rule cover. Remain leader safe. Forget late exactly recognize peace.\nMaybe realize project coach choose summer theory. Great model on free.","previewFileId":"810f8f93-54e1-4d4d-904b-f4eeee9c98ac","estimatedTime":"9 weeks","createdByUserId":"570a084d-a406-48b3-9988-dc76c13a7ccc"}'

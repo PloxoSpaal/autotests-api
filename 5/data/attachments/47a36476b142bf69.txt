@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTA5VDE0OjM2OjQxLjg3OTg2NiIsInVzZXJfaWQiOiIyNzNkYjRmMS0yN2FiLTQ4Y2EtYjMyMy1hMTllZTc3NjM1Y2IifQ.qZUCNcsB_dMSpr5gLVkWK0QyZGW6gGrpxWidCyZKB0E' \
+  -H 'content-length: 443' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Work scene little include news throughout factor.","maxScore":84,"minScore":22,"description":"Care theory human return reflect agreement. Nation difficult price research collection. Though live manager choice hear. Time education movie rate husband office consider.\nWife culture beat central.","previewFileId":"97315d07-71be-43af-8b1e-d18c50a5b1bd","estimatedTime":"1 weeks","createdByUserId":"273db4f1-27ab-48ca-b323-a19ee77635cb"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTA5VDE0OjM2OjQwLjQ0MDQ1MiIsInVzZXJfaWQiOiJiYTU2ZjgyNy05MDA2LTQ3MjItYWFjMi1jZjg2MTdiM2Y3NDIifQ.RnSIDSSZc2V4bAdWpS9Df_0GnnvQJPmwHFUp9PYsCsw' \
+  -H 'content-length: 384' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Some may north.","maxScore":67,"minScore":2,"description":"Guess defense career star trouble. Challenge strong whose event western. Push seat rich though movie president though business. She plant discover their international surface.","previewFileId":"797b79ad-d620-4248-b76b-034e601bed73","estimatedTime":"2 weeks","createdByUserId":"ba56f827-9006-4722-aac2-cf8617b3f742"}'

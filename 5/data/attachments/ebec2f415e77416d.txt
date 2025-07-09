@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTA5VDE0OjM2OjQ1LjQzNTMwMiIsInVzZXJfaWQiOiJhNTBhNzU5MC03ZWVhLTRiZDAtYWI0ZC0wZDA1OWE4NDA0ZDIifQ.tE20rqJPmipgingdTNUun2MACzFp0TYzCw8WtxtepIY' \
+  -H 'content-length: 399' \
+  -H 'content-type: application/json' \
+  -d '{"title":"International control lose raise.","maxScore":84,"minScore":4,"description":"Power author house will. Design way beyond. Entire population fall remember.\nTask body reason popular most no increase. Sign Mrs test order new. Begin detail hour trouble.","previewFileId":"30636b9c-6e5d-4143-a0f3-125c1d671e54","estimatedTime":"8 weeks","createdByUserId":"a50a7590-7eea-4bd0-ab4d-0d059a8404d2"}'

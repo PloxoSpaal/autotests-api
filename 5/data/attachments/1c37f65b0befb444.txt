@@ -1,0 +1,24 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:26 Make GET request to http://localhost:8000/api/v1/exercises/946facfe-1d1c-42df-a1ca-3f74dd488a78
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises/946facfe-1d1c-42df-a1ca-3f74dd488a78
+INFO     BASE_ASSERTIONS:base.py:36 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:66 Check get exercise response 
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise 
+INFO     BASE_ASSERTIONS:base.py:52 Check that "id" equals to 946facfe-1d1c-42df-a1ca-3f74dd488a78
+INFO     BASE_ASSERTIONS:base.py:52 Check that "title" equals to Detail laugh reality able ask hundred cut.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "course_id" equals to 42852a3a-e3c1-4cfa-974b-e624bdfb9c48
+INFO     BASE_ASSERTIONS:base.py:52 Check that "max_score" equals to 66
+INFO     BASE_ASSERTIONS:base.py:52 Check that "min_score" equals to 19
+INFO     BASE_ASSERTIONS:base.py:52 Check that "order_index" equals to 80
+INFO     BASE_ASSERTIONS:base.py:52 Check that "description" equals to Tonight relate modern they foot take rest purpose. Its guess air late quality. See condition TV medical above above concern.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "estimated_time" equals to 7 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

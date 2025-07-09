@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTA5VDE0OjM2OjQ0LjAwNDQ5MiIsInVzZXJfaWQiOiJlMTQ1ZGY5NS01YTg0LTQxZWItYjhlNi0wMjk4NTE3MGM0ZGUifQ.8KpA9HmEfMXISlsz_VCx1AzWESPPms49L_nxGYubyL4' \
+  -H 'content-length: 404' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Man expect charge to bed.","maxScore":68,"minScore":16,"description":"Of last baby. Executive simple miss issue drop model. Whole word return left Mr.\nWar water product game. Operation believe guy radio. This yes ahead organization dark common language.","previewFileId":"533e58e7-86e1-45d6-9c7b-d3fc145d0024","estimatedTime":"9 weeks","createdByUserId":"e145df95-5a84-41eb-b8e6-02985170c4de"}'

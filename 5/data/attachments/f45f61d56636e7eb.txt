@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/51a997b3-c1b8-4fd1-ad0f-74fca8a1e5ae' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTA5VDE0OjM2OjQwLjQ0MDQ1MiIsInVzZXJfaWQiOiJiYTU2ZjgyNy05MDA2LTQ3MjItYWFjMi1jZjg2MTdiM2Y3NDIifQ.RnSIDSSZc2V4bAdWpS9Df_0GnnvQJPmwHFUp9PYsCsw' \
+  -H 'content-length: 273' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Young hair prepare poor.","maxScore":91,"minScore":21,"description":"Old over return town. Chance individual start receive full wrong surface. Summer natural story sit seem dream thing imagine. Feeling agent our entire he consumer leg.","estimatedTime":"1 weeks"}'

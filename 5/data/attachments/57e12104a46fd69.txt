@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTA5VDE0OjM2OjQzLjI5MDk4OSIsInVzZXJfaWQiOiJlOTg5NGRkOC0wZjA0LTQ2MzctYjY2Ny1jZWJmOGE5MTMyZjcifQ.56swQfQGBQdPdOj-44jQLxoma3w71zbM-7mYGyMqDQg' \
+  -H 'content-length: 385' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Show check notice once.","maxScore":82,"minScore":6,"description":"Prove maintain race team apply back. Challenge power simple heavy ahead. After politics morning section crime item reflect. Worker candidate school arrive bank listen.","previewFileId":"0e527c03-4667-4fc9-ac4c-123daa1b0edf","estimatedTime":"10 weeks","createdByUserId":"e9894dd8-0f04-4637-b667-cebf8a9132f7"}'
