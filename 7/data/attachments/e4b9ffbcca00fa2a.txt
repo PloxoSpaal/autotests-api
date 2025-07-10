@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEwVDEwOjE4OjU3Ljc3ODc5NiIsInVzZXJfaWQiOiJiZjhmMjczMC0wMzVkLTQ5ZDMtOGNhOC1lZGRjMmVlYmYxNTYifQ.CvDOpWT1Q1IzoTr-11U_ZErWWhUf6bik7kSZImm3AsU' \
+  -H 'content-length: 402' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Who might tell yeah apply.","maxScore":99,"minScore":17,"description":"Some different religious put world black modern. Land modern decide pull director. Rather option rate beat which of. Defense those then issue specific second.\nFilm point interview.","previewFileId":"b4d9274a-e462-40c3-9940-f88f31ec3a58","estimatedTime":"7 weeks","createdByUserId":"bf8f2730-035d-49d3-8ca8-eddc2eebf156"}'

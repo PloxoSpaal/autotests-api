@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEwVDEwOjE4OjU5LjE4NDM5NyIsInVzZXJfaWQiOiIwNjk0OWY3YS0xNGM5LTQ0MzYtYTg3OC04MGZmY2ZjNjM3MDkifQ.vSqGB03lnBHuYdfd6bmJQzTj67tjxsxqIkyGzQhCpdg' \
+  -H 'content-length: 429' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Such series those stock discuss offer pick.","maxScore":77,"minScore":18,"description":"Catch head own me truth score course truth.\nWay sort agent wall.\nActually their this billion here west. Civil newspaper choice yourself free. May form industry society standard decide late.","previewFileId":"50af2197-2c74-4214-8fb8-a44d9245b237","estimatedTime":"3 weeks","createdByUserId":"06949f7a-14c9-4436-a878-80ffcfc63709"}'

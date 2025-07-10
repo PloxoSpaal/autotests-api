@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEwVDEwOjE4OjU5Ljg5NDE4NSIsInVzZXJfaWQiOiJmZjRjYjUyNC04OTIxLTQzNTMtOWQ1Yi1mYTNiYjQ4YmEyMTQifQ.8jaL88GGbA71PR8ZmXo7BxMITUttqTJR5DDjF8jIFG0' \
+  -H 'content-length: 438' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Serious life factor child necessary many draw expect.","maxScore":79,"minScore":25,"description":"Safe human fish player reality huge. Field beautiful what when whole it.\nMust improve thing little machine just item notice. Like mouth mother such cup. Financial plant stock finally mouth.","previewFileId":"77242870-6d30-4b55-803a-0dde4f1e993f","estimatedTime":"6 weeks","createdByUserId":"ff4cb524-8921-4353-9d5b-fa3bb48ba214"}'

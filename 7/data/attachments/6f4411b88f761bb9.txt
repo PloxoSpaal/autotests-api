@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEwVDEwOjE4OjU4LjQ3OTg1OCIsInVzZXJfaWQiOiJjMzk1YTYwYy04ODAyLTQxZTktODU4Yi0yNjkwODQxN2QwZTUifQ.Nsdw0G0uLrGc9kwq4NjcAHfScC1hpCHypMqYxf-iJhw' \
+  -H 'content-length: 444' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Resource first condition manage position environment you.","maxScore":77,"minScore":12,"description":"Society sell someone people summer state probably wrong. Model six local investment last majority feel.\nPeople garden north compare clearly. Defense benefit employee. Field early man science.","previewFileId":"5034b963-5eed-4f88-82e0-dcbe0ab48966","estimatedTime":"7 weeks","createdByUserId":"c395a60c-8802-41e9-858b-26908417d0e5"}'

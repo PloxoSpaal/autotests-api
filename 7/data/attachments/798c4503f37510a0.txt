@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEwVDEwOjE4OjU3LjA4MTg4MyIsInVzZXJfaWQiOiI1ZjcxMDc0ZS1lNmRiLTQ2YWEtYmEyOS1lYmM5YzgxZDEyNjAifQ.EONPsBstd6tDrMgpzNXA1GgxohO2T7-vwme9L-1Z5l0' \
+  -H 'content-length: 303' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Material board mention five.","maxScore":79,"minScore":12,"description":"Lose among remember value live accept drug. Information manager purpose protect.","previewFileId":"7654de80-57b3-4c43-ad5d-deb902ffa0a9","estimatedTime":"6 weeks","createdByUserId":"5f71074e-e6db-46aa-ba29-ebc9c81d1260"}'

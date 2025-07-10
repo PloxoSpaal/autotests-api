@@ -1,0 +1,26 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:26 Make GET request to http://localhost:8000/api/v1/exercises?courseId=25a24dba-d683-4234-9b88-b921c706bfb2
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=25a24dba-d683-4234-9b88-b921c706bfb2
+INFO     BASE_ASSERTIONS:base.py:36 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:81 Check get exercises list response 
+INFO     BASE_ASSERTIONS:base.py:19 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise 
+INFO     BASE_ASSERTIONS:base.py:52 Check that "id" equals to 8f700713-df02-46e0-b184-0fc02a7a7232
+INFO     BASE_ASSERTIONS:base.py:52 Check that "title" equals to Sea likely different raise traditional employee truth.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "course_id" equals to 25a24dba-d683-4234-9b88-b921c706bfb2
+INFO     BASE_ASSERTIONS:base.py:52 Check that "max_score" equals to 63
+INFO     BASE_ASSERTIONS:base.py:52 Check that "min_score" equals to 4
+INFO     BASE_ASSERTIONS:base.py:52 Check that "order_index" equals to 100
+INFO     BASE_ASSERTIONS:base.py:52 Check that "description" equals to Also record well bed. Growth help suddenly rise join whose. Drop then act.
+Hold like raise expert same hand color necessary. Movement health draw along south present happen.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "estimated_time" equals to 5 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEwVDEwOjE5OjAwLjYwNDA0MSIsInVzZXJfaWQiOiJmNGU4YWFhZi0yNmRkLTQ2YjEtODgxYS1kZDhmMWEwYmM5YzEifQ.66sVcsx-FmQGAQPQs6pEvj4NCAsf-Fvxj8nl2bl2a4I' \
+  -H 'content-length: 423' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Happen cold improve small company.","maxScore":57,"minScore":2,"description":"Although college much hope. Medical mouth shoulder stage audience seat concern along. Share note return.\nSystem media beautiful education service staff. Use relationship another doctor decision.","previewFileId":"b231478e-1eda-43b6-a713-10ae6c97527d","estimatedTime":"6 weeks","createdByUserId":"f4e8aaaf-26dd-46b1-881a-dd8f1a0bc9c1"}'
