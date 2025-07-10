@@ -46,7 +46,7 @@ jobs:
           pytest -m regression --alluredir=allure-results
 
       - name: Upload Allure results as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path: allure-results
@@ -59,7 +59,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Download Allure results
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: allure-results
           path: allure-results
