@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjA4OjEyLjk2NTkxMyIsInVzZXJfaWQiOiI3Nzc4MWZkZi04ZGViLTQ0N2MtYmYzYi02MjJjYTczOGY5YjUifQ.pQYnuUbkGi1mS4Za2jaySpXhIBTq9MYEyFvqrrnv7LY' \
+  -H 'content-length: 370' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Player box cup year.","maxScore":85,"minScore":19,"description":"Ahead music service whether couple.\nCompare glass hot assume. The quality then stuff bed.\nReality central Mrs idea any cost time his. Bit life land draw.","previewFileId":"a941ed23-dc26-4c1f-b967-5199512e0658","estimatedTime":"9 weeks","createdByUserId":"77781fdf-8deb-447c-bf3b-622ca738f9b5"}'

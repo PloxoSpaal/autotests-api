@@ -1,0 +1,26 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:26 Make GET request to http://localhost:8000/api/v1/exercises/ca2fadf1-5bd5-4e34-b991-765e5b0f45ac
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises/ca2fadf1-5bd5-4e34-b991-765e5b0f45ac
+INFO     BASE_ASSERTIONS:base.py:36 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:66 Check get exercise response 
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise 
+INFO     BASE_ASSERTIONS:base.py:52 Check that "id" equals to ca2fadf1-5bd5-4e34-b991-765e5b0f45ac
+INFO     BASE_ASSERTIONS:base.py:52 Check that "title" equals to Space who card opportunity.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "course_id" equals to 074fcdce-98a2-4005-926a-e92cf71f934e
+INFO     BASE_ASSERTIONS:base.py:52 Check that "max_score" equals to 53
+INFO     BASE_ASSERTIONS:base.py:52 Check that "min_score" equals to 19
+INFO     BASE_ASSERTIONS:base.py:52 Check that "order_index" equals to 99
+INFO     BASE_ASSERTIONS:base.py:52 Check that "description" equals to Or agree discuss computer. Say hundred enough learn their member any. Dark because pick girl soon room.
+Center health concern south. Why build gun very.
+Beat owner entire leave stage behavior.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "estimated_time" equals to 4 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

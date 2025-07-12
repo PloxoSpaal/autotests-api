@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjA4OjE1Ljc3MDIwNyIsInVzZXJfaWQiOiI1MjQxM2RhZS0yYzQwLTQxNmMtOGMxZS1hYWM5MjJiMWYzNzEifQ.S96mOjGwPugOGNsmYpJig2AUyQ5hnDPApIodjR7nSX0' \
+  -H 'content-length: 404' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Game just man positive serious the.","maxScore":57,"minScore":1,"description":"Morning also six lay drop behavior middle. Leg process add skin.\nYet by deal week. Bit leader southern affect realize man blue group. Give million describe cold personal low.","previewFileId":"f7e30393-1c66-4411-b812-eb5f55d96ba8","estimatedTime":"1 weeks","createdByUserId":"52413dae-2c40-416c-8c1e-aac922b1f371"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjA4OjE0LjM2NzE3MCIsInVzZXJfaWQiOiI5NzkwYWMwOC0wZTJlLTQ0MWItOTViYy0xMzBlMDAzYzJjNWQifQ.84CyRbkL-OjSbU8PwHhKiZ4XZ9Zy8mUaivMqQ4DLAl0' \
+  -H 'content-length: 417' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Third without seven help.","maxScore":63,"minScore":25,"description":"Book trial American economy stop decade have Congress. Opportunity apply star audience stock read always.\nWest ago race research two produce among. Group hour happy rise tonight professional stop.","previewFileId":"5e16dcb5-bf30-4175-b071-727dd89431b7","estimatedTime":"1 weeks","createdByUserId":"9790ac08-0e2e-441b-95bc-130e003c2c5d"}'

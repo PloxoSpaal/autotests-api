@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjA4OjE2LjUwMDE3OCIsInVzZXJfaWQiOiI2NGE2ZjQxOS0wMzU5LTRkYjctOGY5MS0zMzdhN2VjM2I1YTUifQ.JP2yaLhuR4363RHTb3SknSYtNzkAvPQu0-qDXuVnb-k' \
+  -H 'content-length: 366' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Wrong ok after easy home five.","maxScore":51,"minScore":22,"description":"Pay enjoy argue form go. Expert fast agency voice.\nChair pick nor after bar. Research pay star sister simply design. Upon toward deal least.","previewFileId":"d1fb08fc-046a-4f31-a783-613466a5a162","estimatedTime":"8 weeks","createdByUserId":"64a6f419-0359-4db7-8f91-337a7ec3b5a5"}'

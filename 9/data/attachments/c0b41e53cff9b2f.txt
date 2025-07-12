@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjA4OjEyLjI0MzMzNiIsInVzZXJfaWQiOiIxZGRkMDZiOS02MWRhLTQ2ZTUtODMzNS0yY2EwNDQzZjU0NDUifQ.QVxWCZkmAO1yFDq-rW-3Ymfeg78LY7_nAFbK0Zfbn6w' \
+  -H 'content-length: 390' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Wall picture admit.","maxScore":70,"minScore":5,"description":"Everyone this adult before. Purpose offer trouble cultural war read avoid.\nEnough within generation green. Huge turn discuss discover ten threat meet. Culture compare everyone.","previewFileId":"d8b798fc-576e-44b1-9d9c-1144c5a12eb6","estimatedTime":"6 weeks","createdByUserId":"1ddd06b9-61da-46e5-8335-2ca0443f5445"}'

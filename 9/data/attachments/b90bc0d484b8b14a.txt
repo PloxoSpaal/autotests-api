@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjA4OjEzLjY3MjgxMyIsInVzZXJfaWQiOiJkODgwZmViMS0yMGFjLTQwOGUtYmE2MS0yMTRiNmM0MjRkMjQifQ.YfBdJOfW97gnZuRY2KX8KTnPi1q6A9taFZN9cqgK7Lc' \
+  -H 'content-length: 406' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Add mean picture.","maxScore":90,"minScore":1,"description":"Too particularly safe forward. Eat arm he series. Far stock opportunity born bed.\nMyself show sit small easy go lose past. Wife job time lose reduce. Role foreign near claim bill election woman.","previewFileId":"4ba81ff1-fd5d-4008-8407-c83193e89c09","estimatedTime":"8 weeks","createdByUserId":"d880feb1-20ac-408e-ba61-214b6c424d24"}'

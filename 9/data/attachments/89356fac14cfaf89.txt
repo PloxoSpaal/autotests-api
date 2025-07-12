@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjA4OjE1LjA2NzY2NyIsInVzZXJfaWQiOiJjNGI5MzAyYy1iNjk1LTQ5NjItOTIyOC0wZWRiMzQxMjI3MDAifQ.S2N-msmP5jvS84i-ZDfDBhZw0yquZwua_KHgiNnhPoA' \
+  -H 'content-length: 344' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Campaign ever feel coach enter.","maxScore":67,"minScore":2,"description":"Recently American war condition company film form. Agreement democratic discover special agreement writer professional.","previewFileId":"2e48910e-5b58-4760-a9ec-5f91a9880cf9","estimatedTime":"7 weeks","createdByUserId":"c4b9302c-b695-4962-9228-0edb34122700"}'
