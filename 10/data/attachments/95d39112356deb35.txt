@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjE3OjEyLjM0MTE3NyIsInVzZXJfaWQiOiJiYzRkZmVhMS1lMWMxLTRmYTYtOWM4ZS1jNWFlMzc5NDRhYTgifQ.dXvDUuWY7f4E5a8VAirKWrZyEZzLzLx6JsqBxoaTxMQ' \
+  -H 'content-length: 408' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Car history poor attention.","maxScore":73,"minScore":29,"description":"Once matter other whole research. Economy hour result. Play computer street situation.\nStuff much respond main administration. Once six hot. Cold four when throughout local performance.","previewFileId":"9660167e-b5a7-46d1-83e8-36b76137ac7c","estimatedTime":"9 weeks","createdByUserId":"bc4dfea1-e1c1-4fa6-9c8e-c5ae37944aa8"}'

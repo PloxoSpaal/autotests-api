@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjE3OjEwLjkxMzExMiIsInVzZXJfaWQiOiI2ZjRiYzE2MC00Y2Y1LTQyZTAtYjUyNC1iNGYxZjJjODY4MjQifQ.0pDXHackeCuoC41f6JCXZFf4x7EcDN1FuZZv5ep8ep8' \
+  -H 'content-length: 439' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Church commercial rock I account more general without.","maxScore":76,"minScore":9,"description":"Well deal sound feeling car. Defense conference each character.\nCan capital many view goal. Respond together future last participant our support. Community plan including which spend attack.","previewFileId":"48fbd678-2703-4c99-8588-f382755b3360","estimatedTime":"5 weeks","createdByUserId":"6f4bc160-4cf5-42e0-b524-b4f1f2c86824"}'

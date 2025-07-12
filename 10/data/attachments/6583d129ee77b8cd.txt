@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjE3OjA4Ljc2NjM0NSIsInVzZXJfaWQiOiI2OTU5NmM3Mi1jZTdkLTQwYjctYTA0OS1mNTRjMDkwNzlhZDUifQ.AQA3KzAO8EzURMb8_C1c7hVmdTpK6quHQeicsOH4ixU' \
+  -H 'content-length: 290' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Country indicate west send fill player.","maxScore":85,"minScore":28,"description":"Visit house run exactly. Left member conference provide.","previewFileId":"74ecd1ea-5fd8-4214-8898-a0fba88f9edd","estimatedTime":"9 weeks","createdByUserId":"69596c72-ce7d-40b7-a049-f54c09079ad5"}'

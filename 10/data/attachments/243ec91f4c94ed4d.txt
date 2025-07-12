@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/ec92a055-85e1-48fe-bdfa-48ca082cf6cf' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjE3OjEyLjM0MTE3NyIsInVzZXJfaWQiOiJiYzRkZmVhMS1lMWMxLTRmYTYtOWM4ZS1jNWFlMzc5NDRhYTgifQ.dXvDUuWY7f4E5a8VAirKWrZyEZzLzLx6JsqBxoaTxMQ' \
+  -H 'content-length: 257' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Blood now morning area.","maxScore":94,"minScore":16,"orderIndex":25,"description":"Eight best news only public glass. Perhaps detail perhaps near single finish its book. Town water TV together central room season stop.","estimatedTime":"5 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjE3OjEwLjIxMTcwNSIsInVzZXJfaWQiOiJlODNhODhkYy1kMzVjLTQyN2EtOTNiYS03OGJmYTg5NGE1OGMifQ.nbhJrvnyMpysmsiqRtWuPZ__WFAen_N6GXoqbQS2olk' \
+  -H 'content-length: 332' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Key well third option soldier thing simple rule.","maxScore":56,"minScore":12,"description":"Partner trade lose ok democratic. His property game be. Cultural open many lose practice.","previewFileId":"884d2e24-46d1-41b2-bebb-6f261d3f14f8","estimatedTime":"5 weeks","createdByUserId":"e83a88dc-d35c-427a-93ba-78bfa894a58c"}'

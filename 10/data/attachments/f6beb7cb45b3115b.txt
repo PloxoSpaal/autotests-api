@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDExOjE3OjEzLjA4ODE0NSIsInVzZXJfaWQiOiI5ZTI0NDk1Yy1iMTJkLTQyODctYjdhZi1lYTJmNDliMDZkYWQifQ.y9KdiYisOlrVrGMawTFFlA2yZlJhju7m5HKghWiqq2k' \
+  -H 'content-length: 401' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Edge south nature still.","maxScore":87,"minScore":11,"description":"Story loss shake director this thank represent.\nManagement thank far away quality. Away sort operation close care someone seven. Different instead all generation moment information.","previewFileId":"181fbe57-e541-40e4-a559-828eb39b2e2f","estimatedTime":"5 weeks","createdByUserId":"9e24495c-b12d-4287-b7af-ea2f49b06dad"}'
