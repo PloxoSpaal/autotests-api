@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDEwOjU4OjA2LjgwNTgzMCIsInVzZXJfaWQiOiI4NmQ5N2MwZi1jZDQwLTQyODUtYmRhNS03NjkzYmIzYjIyNjkifQ.FQYLvV7vgB2j4DgdUKDzjXKRRB9f9EeUFckIIOafB20' \
+  -H 'content-length: 416' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Detail upon general almost forget true base.","maxScore":64,"minScore":5,"description":"Concern agreement position goal increase public service. Act mouth kind treatment water opportunity.\nThem would thing knowledge me plant tough. Day film at stuff although do as.","previewFileId":"b14d6211-a206-4234-8bda-b57b1563991e","estimatedTime":"5 weeks","createdByUserId":"86d97c0f-cd40-4285-bda5-7693bb3b2269"}'

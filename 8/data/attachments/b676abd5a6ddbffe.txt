@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Make PATCH request to http://localhost:8000/api/v1/courses/fdf5b2a3-a4a6-476a-a5f0-e88fe4e74fce
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/courses/fdf5b2a3-a4a6-476a-a5f0-e88fe4e74fce
+INFO     BASE_ASSERTIONS:base.py:36 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:24 Check update course response
+INFO     BASE_ASSERTIONS:base.py:52 Check that "title" equals to Data rich however.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "max_score" equals to 83
+INFO     BASE_ASSERTIONS:base.py:52 Check that "min_score" equals to 2
+INFO     BASE_ASSERTIONS:base.py:52 Check that "description" equals to Wind include meeting against commercial else wife. Change entire my attention dream beautiful organization. Population customer moment land.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "estimated_time" equals to 4 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

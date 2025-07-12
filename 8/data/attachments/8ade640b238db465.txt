@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDEwOjU4OjEwLjMzMzkwNSIsInVzZXJfaWQiOiI5NmM2ZDQyNy04MGYyLTRjMGEtOTQ0YS0yMjhlZjA2ZWI2ODgifQ.uU6ppi_u4Gpdv6vtKmRcmHx7_q44b4C7bM_qqYrT1l0' \
+  -H 'content-length: 406' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Effort third single forward foot.","maxScore":72,"minScore":24,"description":"Series catch learn specific. Order somebody better president away collection.\nFew market natural strong. Condition able stop big lead air. Himself tax since church only station.","previewFileId":"b4a62f56-8aa0-472d-936f-9fcc45a66741","estimatedTime":"9 weeks","createdByUserId":"96c6d427-80f2-4c0a-944a-228ef06eb688"}'

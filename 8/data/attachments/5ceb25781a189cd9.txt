@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDEwOjU4OjA5LjYyNjU3MyIsInVzZXJfaWQiOiJhZDNiOWM5MS00YjUxLTRmZmUtYjI1Ni0wMjIyMTUyNGI3MDAifQ.Li8Ghk7X0Ivy9fDp5KLgjBfy57fj5N-D8wTcYeiwZXE' \
+  -H 'content-length: 361' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Pm sign talk center two why prove.","maxScore":66,"minScore":27,"description":"Major operation mind reach example. Rock environment understand less of off cold. Involve provide training impact plant near action.","previewFileId":"30a221b7-751c-43cd-b283-c5ef5fe66959","estimatedTime":"8 weeks","createdByUserId":"ad3b9c91-4b51-4ffe-b256-02221524b700"}'

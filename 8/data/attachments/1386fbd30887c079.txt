@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDEwOjU4OjA3LjQ5NTIwNCIsInVzZXJfaWQiOiJmNmE2NmE4My1kNGMzLTRiY2YtODVmNC1jYmFiN2NkOGExODcifQ.2PPQ9RbpFeFquYJnlSAEjHqZFTnVrLgDe9L1ASSTxdg' \
+  -H 'content-length: 387' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Treat bit career one among feeling to agency.","maxScore":88,"minScore":17,"description":"Wait actually fast eight. Star last behavior get.\nFoot manager every energy beat fine bag theory. Why chair about military history beautiful walk.","previewFileId":"1bf2a15a-3617-44e3-960c-2a6bf8977c14","estimatedTime":"1 weeks","createdByUserId":"f6a66a83-d4c3-4bcf-85f4-cbab7cd8a187"}'

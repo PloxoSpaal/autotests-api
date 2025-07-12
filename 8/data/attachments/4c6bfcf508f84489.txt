@@ -1,0 +1,25 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:26 Make GET request to http://localhost:8000/api/v1/exercises/2738ae55-23a7-4a89-9dad-1874f3a1a431
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises/2738ae55-23a7-4a89-9dad-1874f3a1a431
+INFO     BASE_ASSERTIONS:base.py:36 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:66 Check get exercise response 
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise 
+INFO     BASE_ASSERTIONS:base.py:52 Check that "id" equals to 2738ae55-23a7-4a89-9dad-1874f3a1a431
+INFO     BASE_ASSERTIONS:base.py:52 Check that "title" equals to Tend get rule newspaper tree.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "course_id" equals to faf44778-538c-4295-ba3a-beef1c1771c7
+INFO     BASE_ASSERTIONS:base.py:52 Check that "max_score" equals to 59
+INFO     BASE_ASSERTIONS:base.py:52 Check that "min_score" equals to 24
+INFO     BASE_ASSERTIONS:base.py:52 Check that "order_index" equals to 40
+INFO     BASE_ASSERTIONS:base.py:52 Check that "description" equals to Pass trial note. Once guess sell. Hear thank build audience pass big.
+Along recognize myself great pass determine. Admit analysis common leader.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "estimated_time" equals to 9 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

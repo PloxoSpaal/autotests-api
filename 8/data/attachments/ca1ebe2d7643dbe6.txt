@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDEwOjU4OjA1LjM4MzA1MiIsInVzZXJfaWQiOiI3MWVjYTRiMy03NTY5LTQwODctOWNiZS00NWU3YTYyMzU1YWIifQ.Gm31F1iiz7rAW5bA74lsX7D2PFeztaQafWfNLgg__hM' \
+  -H 'content-length: 421' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Save old them number girl.","maxScore":62,"minScore":16,"description":"Teacher democratic team relationship own person more. Court computer myself letter president.\nGun clearly public candidate. Little trouble Congress head. Deep special seven offer reach personal win.","previewFileId":"5b9874e7-08b5-41c4-9fb2-0181070176b5","estimatedTime":"10 weeks","createdByUserId":"71eca4b3-7569-4087-9cbe-45e7a62355ab"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/fdf5b2a3-a4a6-476a-a5f0-e88fe4e74fce' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDEwOjU4OjA1LjM4MzA1MiIsInVzZXJfaWQiOiI3MWVjYTRiMy03NTY5LTQwODctOWNiZS00NWU3YTYyMzU1YWIifQ.Gm31F1iiz7rAW5bA74lsX7D2PFeztaQafWfNLgg__hM' \
+  -H 'content-length: 240' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Data rich however.","maxScore":83,"minScore":2,"description":"Wind include meeting against commercial else wife. Change entire my attention dream beautiful organization. Population customer moment land.","estimatedTime":"4 weeks"}'

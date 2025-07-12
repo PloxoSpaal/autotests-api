@@ -1,0 +1,25 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:26 Make GET request to http://localhost:8000/api/v1/exercises?courseId=d98f7a5a-9124-4b1b-b215-b8b74f97255c
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=d98f7a5a-9124-4b1b-b215-b8b74f97255c
+INFO     BASE_ASSERTIONS:base.py:36 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:81 Check get exercises list response 
+INFO     BASE_ASSERTIONS:base.py:19 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:44 Check exercise 
+INFO     BASE_ASSERTIONS:base.py:52 Check that "id" equals to a50f1c24-d8a0-414b-a116-b201503fd18b
+INFO     BASE_ASSERTIONS:base.py:52 Check that "title" equals to However parent industry little institution population industry.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "course_id" equals to d98f7a5a-9124-4b1b-b215-b8b74f97255c
+INFO     BASE_ASSERTIONS:base.py:52 Check that "max_score" equals to 79
+INFO     BASE_ASSERTIONS:base.py:52 Check that "min_score" equals to 28
+INFO     BASE_ASSERTIONS:base.py:52 Check that "order_index" equals to 42
+INFO     BASE_ASSERTIONS:base.py:52 Check that "description" equals to Everybody model defense example most particular. Different former him stuff. Loss country deal task owner ability remain through.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "estimated_time" equals to 2 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

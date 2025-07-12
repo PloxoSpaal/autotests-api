@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDEwOjU4OjA4Ljg5NTY3NCIsInVzZXJfaWQiOiI2OGE2NTYyMC0xMDQzLTQ4NjYtYTQwMy1jNGFkZGU2YWUyNzAifQ.4dslOi9Z5ynlaz6PC0YwlDwoNgA95AAd2BUeD1WXyPU' \
+  -H 'content-length: 356' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Field history kind floor notice approach.","maxScore":58,"minScore":9,"description":"Help and cell. Four visit project you. Movement watch can worry whose. Like send customer middle discover inside involve.","previewFileId":"56d23b5b-726a-45ec-9443-1db5082df5a0","estimatedTime":"4 weeks","createdByUserId":"68a65620-1043-4866-a403-c4adde6ae270"}'
