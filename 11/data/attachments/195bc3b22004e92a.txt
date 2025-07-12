@@ -1,0 +1,22 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:26 Make PATCH request to http://localhost:8000/api/v1/exercises/d95833c9-c571-436d-91e9-1bb47bff6e03
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises/d95833c9-c571-436d-91e9-1bb47bff6e03
+INFO     BASE_ASSERTIONS:base.py:36 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:99 Check update exercise response 
+INFO     BASE_ASSERTIONS:base.py:52 Check that "title" equals to Have whatever kid order safe.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "min_score" equals to 1
+INFO     BASE_ASSERTIONS:base.py:52 Check that "max_score" equals to 99
+INFO     BASE_ASSERTIONS:base.py:52 Check that "description" equals to Increase data character save white. Woman each response myself usually purpose. Cover ago force project.
+Whether beyond reveal give. Happy rule establish tree improve nature example simple.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "estimated_time" equals to 4 weeks
+INFO     BASE_ASSERTIONS:base.py:52 Check that "order_index" equals to 32
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

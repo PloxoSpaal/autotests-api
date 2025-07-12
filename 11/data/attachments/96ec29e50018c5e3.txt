@@ -1,0 +1,11 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     SWAGGER_COVERAGE_TRACKER_STORAGE:storage.py:34 Results directory does not exist, creating: coverage-results
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     BASE_ASSERTIONS:base.py:36 Check that response status code equals to 200
+INFO     AUTHENTICATION_ASSERTIONS:authentication.py:18 Check login response
+INFO     BASE_ASSERTIONS:base.py:52 Check that "token_type" equals to bearer
+INFO     BASE_ASSERTIONS:base.py:68 Check that "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM1OjExLjM5MDU4OSIsInVzZXJfaWQiOiJmNWI2YzM1OS0yYzIyLTQ0MzgtYjM1NS0xMTM5MjFhM2E0ZTQifQ.c8YdAC9JG71p0i1cI1vMdvGY_yJBtjc12UwLAbGO8Uo" in access_token is true
+INFO     BASE_ASSERTIONS:base.py:68 Check that "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA5LTEwVDE5OjA1OjExLjM5MDc3MSIsInVzZXJfaWQiOiJmNWI2YzM1OS0yYzIyLTQ0MzgtYjM1NS0xMTM5MjFhM2E0ZTQifQ.JRr9CXkefRo5kAn6FZeIQNzYOCoPmq4m4VZMUG64Cec" in refresh_token is true
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

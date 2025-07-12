@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM1OjE3LjAxMjY2OSIsInVzZXJfaWQiOiI0ZmJjYTU4Ni05NGY5LTQyMDUtYTE4NC1lNWI1Y2ZiOWM2ZjYifQ.FDIx1D1jQuA2S7WqJs38ipq7_aHJgMrICi2KoDzwyyc' \
+  -H 'content-length: 377' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Concern see democratic parent form out box.","maxScore":91,"minScore":19,"description":"Present field response either certainly according. Various when follow cost crime. Arrive wall the yet board. Ability may every cut health.","previewFileId":"c838bd76-2281-491c-9c6d-bbfe7d2a84ee","estimatedTime":"8 weeks","createdByUserId":"4fbca586-94f9-4205-a184-e5b5cfb9c6f6"}'

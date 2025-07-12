@@ -1,0 +1,20 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:36 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:81 Check create course response
+INFO     BASE_ASSERTIONS:base.py:52 Check that "title" equals to Move hot individual plant who add.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "max_score" equals to 65
+INFO     BASE_ASSERTIONS:base.py:52 Check that "min_score" equals to 19
+INFO     BASE_ASSERTIONS:base.py:52 Check that "description" equals to Now partner treatment.
+Myself use program especially foreign give blood. Then value brother chair.
+Thought authority section create. Lead yet science suggest stock response.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "estimated_time" equals to 8 weeks
+INFO     BASE_ASSERTIONS:base.py:52 Check that "preview_file_id" equals to 1a57445e-1ebf-442c-b16e-2450962b4b65
+INFO     BASE_ASSERTIONS:base.py:52 Check that "created_by_user_id" equals to ad297430-e942-45b0-be68-7d5c3943b667
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

@@ -1,0 +1,21 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTIONS:base.py:36 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:25 Check created exercise response
+INFO     BASE_ASSERTIONS:base.py:52 Check that "title" equals to General performance to likely society theory.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "course_id" equals to 7a87c29d-c0aa-4e78-aeac-5860ea11cbfb
+INFO     BASE_ASSERTIONS:base.py:52 Check that "max_score" equals to 61
+INFO     BASE_ASSERTIONS:base.py:52 Check that "min_score" equals to 30
+INFO     BASE_ASSERTIONS:base.py:52 Check that "order_index" equals to 76
+INFO     BASE_ASSERTIONS:base.py:52 Check that "description" equals to Only meet decade above else thank gun. Book fact also mind theory if.
+Away late would indicate left my. Scientist politics soldier left. Keep indicate give many bar letter near.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "estimated_time" equals to 6 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema

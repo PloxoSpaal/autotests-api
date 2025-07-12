@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM1OjExLjk5NjIwNiIsInVzZXJfaWQiOiIwZDMwMWNiNi1jMmZlLTQyMWUtYjNjYy1lMWI1ODViYzliOGIifQ.2X3qNF5DrTfr0IZALTm-OtnofckVOMs-gfGWajMbnLE' \
+  -H 'content-length: 405' \
+  -H 'content-type: application/json' \
+  -d '{"title":"That think letter throw hold degree.","maxScore":73,"minScore":9,"description":"Throw when great chance lay. Production reality make member reach gun can law.\nCoach five whole game. Section factor responsibility skill impact size. Book product thing per.","previewFileId":"5c98a37f-706e-4298-8be6-66ef14f2026c","estimatedTime":"4 weeks","createdByUserId":"0d301cb6-c2fe-421e-b3cc-e1b585bc9b8b"}'

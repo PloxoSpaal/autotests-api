@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM1OjE0LjEyNzg5MiIsInVzZXJfaWQiOiI4NmZhZWMwZS1iMWY4LTQyYjQtOTFiZC0xNWY4MzA4MzhmZDAifQ.BQRnLhCnF74t7wHuRc6i0B43cwB8pp1boitt2ryOdJs' \
+  -H 'content-length: 375' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Author she night magazine note weight order.","maxScore":73,"minScore":15,"description":"Bring suggest every site long central us represent. Produce against exist yet consider scene national. Event ten both read result white.","previewFileId":"30a18634-de91-4bd8-94eb-04abb43f070a","estimatedTime":"7 weeks","createdByUserId":"86faec0e-b1f8-42b4-91bd-15f830838fd0"}'

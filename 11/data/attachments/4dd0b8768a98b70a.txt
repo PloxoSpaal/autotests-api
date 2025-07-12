@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM1OjE1LjU0MTkyNiIsInVzZXJfaWQiOiJjNDcwMzU3Ny0zYjM0LTRiN2EtOWYxOS03NWExNWZlMDU3M2MifQ.1TZjLvOxae0nFWhU3YmmT76prqwhOUF5zpUeAUR0FwU' \
+  -H 'content-length: 384' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Idea mission great too opportunity employee.","maxScore":53,"minScore":27,"description":"Give continue state visit modern final entire education. Act ago kind wind value list.\nInterest modern similar. Control have center size career.","previewFileId":"c22bf00f-f917-48e0-b0f5-391f49fe9aec","estimatedTime":"4 weeks","createdByUserId":"c4703577-3b34-4b7a-9f19-75a15fe0573c"}'
