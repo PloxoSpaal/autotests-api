@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM3OjI1Ljk2MDEwNCIsInVzZXJfaWQiOiIwN2YwODhjYi1mZDA3LTQyZjktODZhYy0wY2RjMDM0NzgzMDcifQ.sdt5ap8Cg6XKYZhF3jr1HgeScE-8uXLTDY1SwRjL0_o' \
+  -H 'content-length: 414' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Though test improve benefit over name central force.","maxScore":64,"minScore":29,"description":"Hold hard name kitchen life watch man. Whose benefit her similar job key couple. Beat medical like carry.\nBig large often. Open could where image decision good cover.","previewFileId":"d2d0e2ff-d94e-46c6-b41f-d9c091253d05","estimatedTime":"6 weeks","createdByUserId":"07f088cb-fd07-42f9-86ac-0cdc03478307"}'

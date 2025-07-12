@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM3OjIzLjc3NzMxMSIsInVzZXJfaWQiOiI1MjZjOWZhYi0wNTYzLTQ2ZTMtYjkwZS1kOTMxYmUwMWMxMWUifQ.roWO6zhazOeBGRmf7pz0f9n1Wcru9Qt5pWTfaSvuE_k' \
+  -H 'content-length: 330' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Force cost land song.","maxScore":72,"minScore":3,"description":"Unit hear take street well energy no. Music suggest southern join able people memory.\nOccur nature address trade.","previewFileId":"4e873861-b509-49da-9a1c-15b301a919a4","estimatedTime":"10 weeks","createdByUserId":"526c9fab-0563-46e3-b90e-d931be01c11e"}'

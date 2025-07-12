@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM3OjIwLjkxODQ5OCIsInVzZXJfaWQiOiJkMDIyMjJjYi05ZmZlLTRlNTctOGFlOS1lMTg1Yzk5MDNjZTUifQ.mNiRMmrSovGCN6shm0tut4hTGzTxacVSFbHkhu2LaaM' \
+  -H 'content-length: 371' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Safe yourself provide language.","maxScore":69,"minScore":4,"description":"Culture physical early safe bring. Issue with rest truth. General situation decade any environmental shake whom. True guess address seat evidence.","previewFileId":"cb8f9a8d-121e-4eb6-bbb4-4b6258c010ca","estimatedTime":"8 weeks","createdByUserId":"d02222cb-9ffe-4e57-8ae9-e185c9903ce5"}'

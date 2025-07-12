@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM3OjIyLjM2MjU5OSIsInVzZXJfaWQiOiIwZWVhMTYyMC0wNDliLTRmMGQtODBmYi0wNDQxYjNhMTdhMDMifQ.RMcfj8cr-7jUQ1b1rS-FvcjS5LBTFOT0BND5y57mOIA' \
+  -H 'content-length: 323' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Value the politics administration effort.","maxScore":98,"minScore":18,"description":"White air pattern court network because yourself. Want view central physical will home.","previewFileId":"dc0536be-cdcc-4889-9d7d-dee49d2f1c94","estimatedTime":"6 weeks","createdByUserId":"0eea1620-049b-4f0d-80fb-0441b3a17a03"}'

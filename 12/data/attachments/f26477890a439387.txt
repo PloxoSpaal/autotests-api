@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM3OjI0LjQ5ODMyNSIsInVzZXJfaWQiOiJlOGUzN2M4Yi0xMmVjLTQ3YTItOTgxMS1hZmYyZmJhY2M3YjMifQ.3WJ9Kx9fqBY73W7kUH6Qb13kyvV_6XcjL2OEgjnxOXk' \
+  -H 'content-length: 268' \
+  -H 'content-type: application/json' \
+  -d '{"title":"School hospital send first.","courseId":"4b927661-53b9-422d-a04a-27590d44455f","maxScore":50,"minScore":30,"orderIndex":71,"description":"Generation middle real allow push above form vote. Couple minute care production for really.","estimatedTime":"1 weeks"}'

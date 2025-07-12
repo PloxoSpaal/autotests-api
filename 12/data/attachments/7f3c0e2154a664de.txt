@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM3OjIxLjY0OTI2NyIsInVzZXJfaWQiOiI1OTBjYzYzOC0zMzkwLTQ0NjctYjcxMy05NDY5OTJlNmM4NzkifQ.MUzXvDzYsJX8hofloPXlMiL_aKvqqu97Npui6kouQyc' \
+  -H 'content-length: 386' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Kid be southern study coach.","maxScore":82,"minScore":19,"description":"Message risk scientist walk act during. Floor often remain manage property relate drop. Employee measure a far alone explain suddenly toward. Concern where set PM.","previewFileId":"729fc25d-8937-424c-9c78-0334bb81ec7d","estimatedTime":"1 weeks","createdByUserId":"590cc638-3390-4467-b713-946992e6c879"}'

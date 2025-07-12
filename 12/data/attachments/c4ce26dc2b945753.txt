@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM3OjI0LjQ5ODMyNSIsInVzZXJfaWQiOiJlOGUzN2M4Yi0xMmVjLTQ3YTItOTgxMS1hZmYyZmJhY2M3YjMifQ.3WJ9Kx9fqBY73W7kUH6Qb13kyvV_6XcjL2OEgjnxOXk' \
+  -H 'content-length: 390' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Defense audience prepare film everyone.","maxScore":67,"minScore":6,"description":"Receive trouble true spring middle peace himself change. Property see assume significant important like describe. Current agency worry friend order American.","previewFileId":"5fd87d53-e324-46b9-b49b-8d420701be3a","estimatedTime":"4 weeks","createdByUserId":"e8e37c8b-12ec-47a2-9811-aff2fbacc7b3"}'

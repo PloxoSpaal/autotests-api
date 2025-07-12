@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/84bbfff8-da05-461e-988e-7236498c7c04' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTA3LTEyVDE5OjM3OjIwLjkxODQ5OCIsInVzZXJfaWQiOiJkMDIyMjJjYi05ZmZlLTRlNTctOGFlOS1lMTg1Yzk5MDNjZTUifQ.mNiRMmrSovGCN6shm0tut4hTGzTxacVSFbHkhu2LaaM' \
+  -H 'content-length: 277' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Community nature miss produce Mrs nature it.","maxScore":83,"minScore":2,"description":"Election stuff growth special top goal. Pick even quite. Vote such could where player free.\nMy bag establish call like. Remain break difference floor.","estimatedTime":"9 weeks"}'

@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:26 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:35 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTIONS:base.py:36 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:81 Check create course response
+INFO     BASE_ASSERTIONS:base.py:52 Check that "title" equals to Value the politics administration effort.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "max_score" equals to 98
+INFO     BASE_ASSERTIONS:base.py:52 Check that "min_score" equals to 18
+INFO     BASE_ASSERTIONS:base.py:52 Check that "description" equals to White air pattern court network because yourself. Want view central physical will home.
+INFO     BASE_ASSERTIONS:base.py:52 Check that "estimated_time" equals to 6 weeks
+INFO     BASE_ASSERTIONS:base.py:52 Check that "preview_file_id" equals to dc0536be-cdcc-4889-9d7d-dee49d2f1c94
+INFO     BASE_ASSERTIONS:base.py:52 Check that "created_by_user_id" equals to 0eea1620-049b-4f0d-80fb-0441b3a17a03
+INFO     SCHEMA_ASSERTIONS:schema.py:20 Validating JSON schema
