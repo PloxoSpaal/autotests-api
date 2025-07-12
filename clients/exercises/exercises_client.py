@@ -5,6 +5,7 @@ from clients.private_http_builder import get_private_http_client, Authentication
 from clients.exercises.exercises_schema import *
 from tools.routes import APIRoutes
 from clients.api_coverage import tracker
+#comment history
 
 
 class ExercisesClient(APIClient):
