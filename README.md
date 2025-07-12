@@ -27,8 +27,8 @@ This project is specifically designed for API autotests, incorporating best prac
 To get started, clone the project repository using Git:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/PloxoSpaal/autotests-api.git
+cd autotests-api
 ```
 
 ### Create a Virtual Environment
