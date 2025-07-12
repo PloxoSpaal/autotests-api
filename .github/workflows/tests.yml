@@ -11,6 +11,7 @@ on:
 jobs:
   run-tests:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -18,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: Clone test server repository
         run: git clone https://github.com/Nikita-Filonov/qa-automation-engineer-api-course.git
@@ -45,18 +46,53 @@ jobs:
         run: |
           pytest -m regression --alluredir=allure-results
 
-      - name: Upload Allure results as artifact
+      # Восстанавливаем историю покрытия из кеша
+      - name: Restore Coverage history
+        uses: actions/cache/restore@v4
+        with:
+          path: coverage-history.json
+          key: coverage-history-${{ github.run_id }}
+          restore-keys: |
+            coverage-history-
+
+      # Генерируем HTML-отчет и обновляем историю
+      - name: Generate Coverage report
+        run: |
+          swagger-coverage-tool save-report
+
+      # Сохраняем историю обратно в кеш
+      - name: Cache Coverage  history
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: coverage-history.json
+          key: coverage-history-${{ github.run_id }}
+
+      # Загружаем HTML-отчет как артефакт
+      - name: Upload Coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage.html
+
+      - name: Upload Allure results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path: allure-results
 
   publish-report:
-    needs: run-tests
+    needs: [ run-tests ]
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
 
       - name: Download Allure results
         uses: actions/download-artifact@v4
@@ -64,15 +100,7 @@ jobs:
           name: allure-results
           path: allure-results
 
-      - name: Get Allure history
-        uses: actions/checkout@v4
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
-
-      - name: Generates Allure Report with history
+      - name: Generate Allure Report with history
         uses: simple-elf/allure-report-action@v1.12
         if: always()
         with:
